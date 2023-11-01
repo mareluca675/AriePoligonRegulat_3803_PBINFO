@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+int main()
+{
+    double n, l, x, cotan, arie;
+    
+    cin >> n >> l;
+    
+    x = 3.14159265358 / n;
+    
+    cotan = cos(x);
+    
+    cotan = cotan / sin(x);
+    
+    arie = (n * l * l * cotan) / 4;
+    
+    arie *= 100;
+    arie = (int) arie;
+    arie /= 100;
+    
+    cout << fixed << setprecision(2) << arie;
+
+
+    return 0;
+}
